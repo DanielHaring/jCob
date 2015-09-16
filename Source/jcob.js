@@ -1,1 +1,16 @@
-// jCob entry point
+define( [ 
+    './Core/Bootstrap',
+    './SignalSlot/Dispatcher'
+], function() {
+
+
+
+
+
+    jCob.Bootstrap.getInstance().run();
+    
+    
+    
+    
+    
+} );
