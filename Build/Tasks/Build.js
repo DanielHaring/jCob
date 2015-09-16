@@ -18,6 +18,10 @@ module.exports = function( grunt ) {
             skipSemiColonInsertion: true,
             preserveLicenseComments: true,
             inlineText: true,
+            wrap: {
+                startFile: 'Build/Template/Pre.txt',
+                endFile: 'Build/Template/Post.txt'
+            },
             rawText: {},
             onBuildWrite: splinter
         };
@@ -58,7 +62,9 @@ module.exports = function( grunt ) {
          */
         config.out = function( merged ) {
             
-            merged = merged.replace( /@VERSION/g, grunt.config( 'pkg.version' ) );
+            merged = merged.replace( /@VERSION/g, grunt.config( 'pkg.version' ) )
+                    .replace( /@DATE/g, ( new Date() ).toISOString().replace( /:\d+\.\d+Z$/, "Z" ) )
+                    .replace( /@YEAR/g, ( new Date() ).getFullYear() );
             
             grunt.file.write( destination, merged );
             

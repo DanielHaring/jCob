@@ -1,0 +1,15 @@
+/**
+ * jCob JavaScript Library v@VERSION
+ * 
+ * Copyright @YEAR Daniel Haring
+ * Released under the GNU license
+ * http://www.gnu.org/copyleft/gpl.html
+ * 
+ * Date: @DATE
+ * 
+ * @author Daniel Haring <daniel@haring.co.at>
+ * @version @VERSION
+ * @requires jQuery <http://jquery.com/>
+ * @param {Object} $ jQuery
+ */
+( function( $ ) {

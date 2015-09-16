@@ -1,0 +1,9 @@
+    window.jCob = new jCob();
+
+    return jCob;
+
+
+
+
+
+} )( jQuery );

@@ -8,6 +8,12 @@ module.exports = function( grunt ) {
                 dest: '<%= destinationFolder %>/<%= pkg.name %>-<%= pkg.version %>.js'
             }
         },
+        copy: {
+            all: {
+                src: '<%= build.all.dest %>',
+                dest: 'Tests/<%= pkg.name %>.js'
+            }
+        },
         uglify: {
             all: {
                 files: {
@@ -34,5 +40,7 @@ module.exports = function( grunt ) {
     grunt.loadTasks( 'Build/Tasks' );
     
     grunt.registerTask( 'compile', [ 'build', 'uglify' ] );
+    
+    grunt.registerTask( 'export', [ 'compile', 'copy' ] );
     
 };
