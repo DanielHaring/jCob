@@ -39,7 +39,7 @@ $ npm install
 Compile jCob:
 
 ```bash
-$ grunt compile
+$ grunt export
 ```
 
 The result will be saved to *./Distributions/* and is ready to use.
