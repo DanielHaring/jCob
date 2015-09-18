@@ -9,7 +9,7 @@ define( function() {
      * 
      * @since 1.0.0
      */
-    jCob.prototype.SignalSlot = new function SignalSlot() {
+    var SignalSlot = jCob.prototype.SignalSlot = new function SignalSlot() {
         
         
         
