@@ -7,11 +7,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script tyoe="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type="text/javascript" src="jcob.js"></script>
+<script type="text/javascript">
+    /* <![CDATA[ */
+    
+    // Nothing to test yet
+    
+    /* ]]> */
+</script>
 <title>jCob Tests</title>
 </head>
 <body>
 <h1>jCob module tests</h1>
-<p>This page intentionally doesn't contain any content.</p>
-<p>Show browser log for status messages.</p>
+<h2>Module: Link Handler</h2>
+<nav>
+    <ul>
+        <li><a href="./jcob.js">Internal link (should be opened in current tab/window)</a></li>
+        <li><a href="./jcob.js" rel="external">Internal link marked as external (should be opened in new tab/window)</a></li>
+        <li><a href="http://www.example.org/">External link (should be opened in new tab/window)</a></p></li>
+    </ul>
+</nav>
 </body>
 </html>
