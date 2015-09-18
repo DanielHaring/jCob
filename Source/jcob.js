@@ -1,6 +1,8 @@
 define( [ 
     './Core/Bootstrap',
-    './SignalSlot/Dispatcher'
+    './SignalSlot/Dispatcher',
+    './Domain/Model/Module',
+    './Modules/LinkHandler'
 ], function() {
 
 

@@ -30,6 +30,29 @@ define( [
         
         
         /**
+         * Initializes all registered modules.
+         * 
+         * @since 1.0.0
+         */
+        function loadModules() {
+            
+            $.each( ModuleRepository.findAll(), function() {
+                
+                if( this.isEnabled() ) {
+                    
+                    this.init();
+                    
+                }
+                
+            } );
+            
+        }
+        
+        
+        
+        
+        
+        /**
          * Returns the pseudo singleton or creates a new one.
          * 
          * @since 1.0.0
@@ -58,7 +81,7 @@ define( [
          */
         this.run = function() {
             
-            window.console.log( '200 OK' );
+            $( document ).ready( loadModules );
             
         };
         
