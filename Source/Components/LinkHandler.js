@@ -80,11 +80,26 @@ define( function() {
             } ) ).click( forceWindow );
             
         };
-        
-        
-        
-        
-        
+
+
+
+
+
+        /**
+         * Restores DOM manipulations.
+         *
+         * @since 2.0.0
+         */
+        this.die = function() {
+
+            $( 'a' ).unbind( 'click', forceWindow );
+
+        };
+
+
+
+
+
         /**
          * Sets the scope where to handle links.
          * 

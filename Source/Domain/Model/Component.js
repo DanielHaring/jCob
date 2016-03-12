@@ -41,12 +41,19 @@ define( [
         
         /**
          * Enables the component for auto loading.
+         * If the application already was initialized, the component will be called immediately.
          * 
          * @since 1.0.0
          */
         this.enable = function(){
             
             enabled = true;
+
+            if(Application.isInitialized()) {
+
+                this.run();
+
+            }
             
         };
         
@@ -56,12 +63,19 @@ define( [
         
         /**
          * Disables the component for auto loading.
+         * If the application already was initialized, the component will be destructed.
          * 
          * @since 1.0.0
          */
         this.disable = function() {
             
             enabled = false;
+
+            if(Application.isInitialized() && $.type(this.die) === 'function') {
+
+                this.die();
+
+            }
             
         };
         
