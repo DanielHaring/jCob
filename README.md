@@ -21,7 +21,7 @@ combination with [Grunt](http://gruntjs.com/).
 First of all, clone the jCob git Repository:
 
 ```bash
-$ git clone https://github.com/HARING/jCob.git
+$ git clone https://github.com/DanielHaring/jCob.git
 ```
 
 Change to the respective directory:
