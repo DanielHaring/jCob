@@ -5,12 +5,24 @@
 <meta name="robots" content="noindex,nofollow">
 <meta name="author" content="Daniel Haring">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script tyoe="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script type="text/javascript" src="jcob.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>
+<script src="jcob.js"></script>
 <script type="text/javascript">
     /* <![CDATA[ */
-    
-    // Nothing to test yet
+
+    (function($) {
+
+        jCob.LinkHandler.disable();
+        jCob.LinkHandler.enable();
+
+        $(document).ready(function() {
+
+            jCob.LinkHandler.disable();
+            jCob.LinkHandler.enable();
+
+        });
+
+    })(jQuery);
     
     /* ]]> */
 </script>
