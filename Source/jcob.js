@@ -1,7 +1,7 @@
 define( [ 
     './Core/Application',
-    './Domain/Model/Module',
-    './Modules/LinkHandler'
+    './Domain/Model/Component',
+    './Components/LinkHandler'
 ], function() {
 
 

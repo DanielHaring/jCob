@@ -11,20 +11,20 @@ define( [
      * 
      * @since 1.0.0
      */
-    jCob.Application = new function Bootstrap() {
+    jCob.Application = new function Application() {
         
         
         
         
         
         /**
-         * Initializes all registered modules.
+         * Initializes all registered components.
          * 
          * @since 1.0.0
          */
-        function loadModules() {
+        function loadComponents() {
             
-            $.each( ModuleRepository.findAll(), function() {
+            $.each( ComponentRepository.findAll(), function() {
                 
                 if( this.isEnabled() ) {
                     
@@ -47,7 +47,7 @@ define( [
          */
         this.run = function() {
             
-            $( document ).ready( loadModules );
+            $( document ).ready( loadComponents );
             
         };
         

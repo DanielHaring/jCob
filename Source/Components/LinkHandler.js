@@ -9,7 +9,7 @@ define( function() {
      * 
      * @since 1.0.0
      */
-    jCob.prototype.LinkHandler = new Module( function LinkHandler() {
+    jCob.prototype.LinkHandler = new Component( function LinkHandler() {
         
         
         

@@ -5,39 +5,39 @@ define( function() {
     
     
     /**
-     * The Module Repository.
+     * The Component Repository.
      * 
      * @since 1.0.0
      */
-    var ModuleRepository = jCob.prototype.ModuleRepository = new function ModuleRepository() {
+    var ComponentRepository = jCob.prototype.ComponentRepository = new function ComponentRepository() {
         
         
         
         
         
         /**
-         * Module registry.
+         * Component registry.
          * 
          * @since 1.0.0
          * @type array
          */
-        var modules = [];
+        var components = [];
         
         
         
         
         
         /**
-         * Adds a module to the repository.
+         * Adds a component to the repository.
          * 
          * @since 1.0.0
-         * @param {jCob.Module} module The module to add to the repository
+         * @param {jCob.Component} component The component to add to the repository
          */
-        this.add = function( module ) {
+        this.add = function( component ) {
             
-            if( $.inArray( module, modules ) < 0 ) {
+            if( $.inArray( component, components ) < 0 ) {
                 
-                modules.push( module );
+                components.push( component );
                 
             }
             
@@ -48,14 +48,14 @@ define( function() {
         
         
         /**
-         * Returns an array of all registered modules.
+         * Returns an array of all registered components.
          * 
          * @since 1.0.0
-         * @returns {Array} An array containing every registered module
+         * @returns {Array} An array containing every registered component
          */
         this.findAll = function() {
             
-            return modules;
+            return components;
             
         };
         

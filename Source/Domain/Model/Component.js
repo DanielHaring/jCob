@@ -1,5 +1,5 @@
 define( [
-    '../Repository/ModuleRepository'
+    '../Repository/ComponentRepository'
 ], function() {
     
     
@@ -7,20 +7,20 @@ define( [
     
     
     /**
-     * Domain model for modules.
+     * Domain model for components.
      * 
      * @since 1.0.0
-     * @param {function} Descendant The function which should be treated as module
-     * @returns {jCob.Module} Instance of itself
+     * @param {function} Descendant The function which should be treated as component
+     * @returns {jCob.Component} Instance of itself
      */
-    var Module = jCob.prototype.Module = function Module( Descendant ) {
+    var Component = jCob.prototype.Component = function Component( Descendant ) {
         
         
         
         
         
         /**
-         * Determines, if the module should be called automatically.
+         * Determines, if the component should be called automatically.
          * 
          * @since 1.0.0
          * @type Boolean
@@ -40,7 +40,7 @@ define( [
         
         
         /**
-         * Enables the module for auto loading.
+         * Enables the component for auto loading.
          * 
          * @since 1.0.0
          */
@@ -55,7 +55,7 @@ define( [
         
         
         /**
-         * Disables the module for auto loading.
+         * Disables the component for auto loading.
          * 
          * @since 1.0.0
          */
@@ -70,10 +70,10 @@ define( [
         
         
         /**
-         * Determines if the module is enabled for auto loading.
+         * Determines if the component is enabled for auto loading.
          * 
          * @since 1.0.0
-         * @returns {Boolean} True if the module is enabled for auto loading, false otherwise.
+         * @returns {Boolean} True if the component is enabled for auto loading, false otherwise.
          */
         this.isEnabled = function() {
             
@@ -86,7 +86,7 @@ define( [
         
         
         /**
-         * Initializes the module. 
+         * Initializes the component.
          * Can be seen as some kind of abstract method as it throws a warning, 
          * if the function wasn't overwritten.
          * 
@@ -126,7 +126,7 @@ define( [
             
             name = Descendant.name;
             
-            var clone = new function GenericModule() {};
+            var clone = new function GenericComponent() {};
             
             $.extend( true, clone, this );
             
@@ -137,7 +137,7 @@ define( [
         }
         
             // Add to repository
-        ModuleRepository.add( Instance );
+        ComponentRepository.add( Instance );
         
         return Instance;
         
