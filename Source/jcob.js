@@ -1,5 +1,5 @@
 define( [ 
-    './Core/Bootstrap',
+    './Core/Application',
     './SignalSlot/Dispatcher',
     './Domain/Model/Module',
     './Modules/LinkHandler'
@@ -9,7 +9,7 @@ define( [
 
 
 
-    jCob.Bootstrap.getInstance().run();
+    jCob.Application.run();
     
     
     
