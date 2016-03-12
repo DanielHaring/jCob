@@ -7,7 +7,7 @@
  * 
  * Date: @DATE
  * 
- * @author Daniel Haring <daniel@haring.co.at>
+ * @author Daniel Haring <development@haring.co.at>
  * @version @VERSION
  * @requires jQuery <http://jquery.com/>
  * @param {Object} $ jQuery
