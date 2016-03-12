@@ -28,7 +28,7 @@ define( [
                 
                 if( this.isEnabled() ) {
                     
-                    this.init();
+                    this.run();
                     
                 }
                 

@@ -60,7 +60,7 @@ define( function() {
          * 
          * @since 1.0.0
          */
-        this.init = function() {
+        this.run = function() {
             
             $( 'a[rel="external"]' ).add( $( 'a[href]', scope ).filter( function() {
                 

@@ -92,10 +92,10 @@ define( [
          * 
          * @since 1.0.0
          */
-        this.init = function() {
+        this.run = function() {
             
             window.console && console.warn( ( this.getName() || 'Anonymus instance ' ) 
-                    + ' doesn\'t provide an initializing function and therefore was skipped.' );
+                    + ' doesn\'t provide a \'run\' method and therefore was skipped.' );
             
         };
         
