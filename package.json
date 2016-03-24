@@ -2,7 +2,7 @@
     "name": "jcob",
     "title": "jCob JavaScript Library",
     "description": "JavaScript Library for Component Management",
-    "version": "2.0.0-rc",
+    "version": "2.0.0",
     "author": {
         "name": "Daniel Haring"
     },
