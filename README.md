@@ -1,22 +1,21 @@
 jCob JavaScript Library
 =======================
 
-This JavaScript library supports you in handling objects and managing JavaScript 
-components within your website.
+This JavaScript library supports you in handling objects and managing JavaScript components within your website.
 
 
-Get your copy
--------------
+Grab the latest release
+-----------------------
 
-At present, there is no downloadable file available. jCob is in early development 
-phase and didn't yield any release yet.
+Switch to *releases* tab and download the latest release. You can choose between an uncompressed version for development
+purposes and the compressed version for production.
 
 
 Create a custom build
 ---------------------
 
-The recommended way of creating a build is by using [Node.js](https://nodejs.org/) in 
-combination with [Grunt](http://gruntjs.com/).
+The recommended way of creating a build is by using [Node.js](https://nodejs.org/) in combination with
+[Grunt](http://gruntjs.com/).
 
 First of all, clone the jCob git Repository:
 
